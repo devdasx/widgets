@@ -18,6 +18,7 @@ import { useWalletInfo } from '../../../hooks/ConnectWallet/useWalletInfo';
 export interface PoolOperateInnerProps {
   pool: OperatePool;
   operate?: OperateTab;
+  onOperateChange?: (operate: OperateTab) => void;
   hidePoolInfo?: boolean;
   errorRefetch?: () => void;
   submittedBack?: () => void;
@@ -28,6 +29,7 @@ export interface PoolOperateInnerProps {
 export default function PoolOperateInner({
   pool,
   operate,
+  onOperateChange,
   hidePoolInfo,
   errorRefetch,
   submittedBack,
@@ -35,7 +37,7 @@ export default function PoolOperateInner({
   showMigrationPairAndMining,
 }: PoolOperateInnerProps) {
   const { operateTab, operateTabs, handleChangeTab } =
-    usePoolOperateTabs(operate);
+    usePoolOperateTabs(operate, onOperateChange);
   const { account } = useWalletInfo();
   const balanceInfo = usePoolBalanceInfo({
     account,

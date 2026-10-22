@@ -313,7 +313,7 @@ msgid "Pricing Model"
 msgstr "定价模式"
 
 #: src/widgets/PoolWidget/PoolCreate/components/DepthAndLiquidityChart.tsx:74
-#: src/widgets/PoolWidget/PoolList/index.tsx:247
+#: src/widgets/PoolWidget/PoolList/index.tsx:253
 #: src/widgets/PoolWidget/PoolOperate/hooks/usePoolOrMiningTabs.ts:17
 msgid "Liquidity"
 msgstr "流动性"
@@ -1085,7 +1085,7 @@ msgstr "手续费费率"
 
 #: src/widgets/PoolWidget/AMMV3/AMMV3PositionManage.tsx:305
 #: src/widgets/PoolWidget/PoolList/hooks/usePoolListTabs.ts:25
-#: src/widgets/PoolWidget/PoolList/index.tsx:180
+#: src/widgets/PoolWidget/PoolList/index.tsx:186
 #: src/widgets/PoolWidget/PoolOperate/AddPoolOperate.tsx:166
 msgid "Add Liquidity"
 msgstr "添加流动性"
@@ -1185,7 +1185,7 @@ msgid "Estimated Time"
 msgstr "预计时间"
 
 #: src/widgets/PoolWidget/PoolCreate/hooks/useVersionList.ts:20
-#: src/widgets/PoolWidget/PoolList/index.tsx:248
+#: src/widgets/PoolWidget/PoolList/index.tsx:254
 msgid "Classical AMM-like pool. Suitable for most assets."
 msgstr "类似 AMM 做市策略，适用于大多数币种"
 
@@ -1330,7 +1330,7 @@ msgstr "比动态滑点低"
 msgid "TVL"
 msgstr "TVL"
 
-#: src/widgets/PoolWidget/PoolOperate/index.tsx:129
+#: src/widgets/PoolWidget/PoolOperate/index.tsx:131
 msgid "LP Tokens"
 msgstr "LP 代币"
 
@@ -2042,7 +2042,7 @@ msgstr "已质押"
 #: src/widgets/PoolWidget/PoolList/MyCreated.tsx:591
 #: src/widgets/PoolWidget/PoolList/MyLiquidity.tsx:1212
 #: src/widgets/PoolWidget/PoolOperate/AddPoolOperate.tsx:145
-#: src/widgets/PoolWidget/PoolOperate/hooks/usePoolOperateTabs.ts:15
+#: src/widgets/PoolWidget/PoolOperate/hooks/usePoolOperateTabs.ts:18
 msgid "Add"
 msgstr "添加"
 
@@ -2308,7 +2308,7 @@ msgstr "初始价格提示"
 #: src/widgets/PoolWidget/PoolList/MyCreated.tsx:579
 #: src/widgets/PoolWidget/PoolList/MyLiquidity.tsx:598
 #: src/widgets/PoolWidget/PoolList/MyLiquidity.tsx:1199
-#: src/widgets/PoolWidget/PoolOperate/hooks/usePoolOperateTabs.ts:16
+#: src/widgets/PoolWidget/PoolOperate/hooks/usePoolOperateTabs.ts:19
 #: src/widgets/PoolWidget/PoolOperate/RemovePoolOperate.tsx:254
 msgid "Remove"
 msgstr "提取"

@@ -34,6 +34,7 @@ export interface PoolOperateProps {
   pool?: PoolOperateInnerProps['pool'];
   address?: string;
   operate?: PoolOperateInnerProps['operate'];
+  onOperateChange?: PoolOperateInnerProps['onOperateChange'];
   chainId?: number;
   hasMining?: boolean;
   hidePoolInfo?: boolean;
@@ -47,6 +48,7 @@ export function PoolOperate({
   pool: poolProps,
   address,
   operate,
+  onOperateChange,
   chainId,
   hasMining,
   hidePoolInfo,
@@ -191,6 +193,7 @@ export function PoolOperate({
           <PoolOperateInner
             pool={pool}
             operate={operate}
+            onOperateChange={onOperateChange}
             hidePoolInfo={hidePoolInfo}
             errorRefetch={poolErrorRefetch}
             submittedBack={() => {

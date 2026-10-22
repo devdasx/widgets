@@ -79,6 +79,12 @@ export default function PoolList({
 
   const [operatePool, setOperatePool] =
     React.useState<Partial<PoolOperateProps> | null>(null);
+  const handleOperateChange = React.useCallback(
+    (operate: PoolOperateProps['operate']) => {
+      setOperatePool((current) => (current ? { ...current, operate } : current));
+    },
+    [],
+  );
 
   return (
     <WidgetContainer
@@ -297,6 +303,7 @@ export default function PoolList({
                 getMigrationPairAndMining={getMigrationPairAndMining}
                 showMigrationPairAndMining={showMigrationPairAndMining}
                 {...operatePool}
+                onOperateChange={handleOperateChange}
               />
             ) : (
               <Box
@@ -322,6 +329,7 @@ export default function PoolList({
                   getMigrationPairAndMining={getMigrationPairAndMining}
                   showMigrationPairAndMining={showMigrationPairAndMining}
                   {...operatePool}
+                  onOperateChange={handleOperateChange}
                   sx={{
                     width: 375,
                     height: 'max-content',
